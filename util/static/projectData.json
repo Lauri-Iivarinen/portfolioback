@@ -6,7 +6,7 @@
         "description": "EfiLibrary is a project between the students of Business Information Technology Degree Programme in Haaga-Helia University of Applied Sciences, and Eficode Oy, a Finnish company specializing in enhancing software development, whose products are related to automation and devops consulting. Joined for the fall 2023 team to continue development made in the last year of the project.",
         "technologies": ["TypeScript", "Express", "REST API", "React", "SQL", "Relational databases", "Docker", "Robot Framework", "GitHub actions"],
         "link": "https://github.com/LibraryProjectGroup",
-        "img": ["https://raw.githubusercontent.com/LibraryProjectGroup/library-project-frontend/s23-documentation/screenshots/login.PNG", "https://raw.githubusercontent.com/LibraryProjectGroup/library-project-frontend/s23-documentation/screenshots/booklist.PNG"]
+        "img": ["https://raw.githubusercontent.com/LibraryProjectGroup/library-project-frontend/main/screenshots/login.PNG", "https://raw.githubusercontent.com/LibraryProjectGroup/library-project-frontend/main/screenshots/booklist.PNG"]
     },
     {
         "project": "Heat pump IOT app",

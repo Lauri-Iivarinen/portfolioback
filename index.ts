@@ -1,15 +1,13 @@
 import express, { Express, Request, Response, Application } from 'express';
 //import workData from './util/static/workData.json' 
+import cors from 'cors'
 
 const app = express();
 const port = process.env.PORT || 8080;
+app.use(cors())
 
-app.get('/', (req: Request, res: Response) => {
-    res.send('Welcome to Express & TypeScript Server');
-  });
-  
 app.listen(port, () => {
-console.log(`http://localhost:${port}`);
+console.log(`Server running at http://localhost:${port}`);
 });
 
 app.get('/api/career', async (req, res) => {
