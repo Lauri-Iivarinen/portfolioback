@@ -1,0 +1,65 @@
+[
+    {
+        "date": "Sept 2013 - May 2017",
+        "workTitle": "Gymnastics instructor",
+        "smallDescription": "Plan and excecute weekly lessons where kids can learn basics/advanced gymnastics and parkour.",
+        "description": "Plan and excecute weekly lessons for children of many ages (4-18) and backgrounds. Goals for lessons are for kids to have a fun and safe environment to socialize and practise what they like most, let it be parkor or more traditional gymnastics.",
+        "icon": "SportsGymnasticsIcon",
+        "location": "Tuusula, Finland",
+        "img": ["vsku1.JPG", "vsku2.JPG"]
+    },
+    {
+        "date": "June 2014 - June 2014",
+        "workTitle": "YCV (Young Confirmed Volunteers)",
+        "smallDescription": "Act as a junior leader for people taking part in confirmation school.",
+        "description": "Provide guidance and mentorship to teenagers who are taking part in confirmation school. In the Finnish Lutheran tradition, religious classes that a person is required to complete before being allowed a Christian wedding or being accepted to become a godparent. It normally consists of 80 hours of teaching and is done in the age of 15.",
+        "icon": "ChurchIcon",
+        "location": "Finland",
+        "img": []
+    },
+    {
+        "date": "July 2017 - June 2018",
+        "workTitle": "Military conscript",
+        "smallDescription": "Served my mandatory military service in Kaartin Jääkärirykmentti.",
+        "description": "Military service is mandatory in finland for all males 18 years of age and voluntary for females. Served for 347 days, longest possible duration. Took part in NCO course and completed the latter half of my service as platoon 2nd in command and got promoted to sergeant on my last week of service.",
+        "icon": "MilitaryTechIcon",
+        "location": "Helsinki, Finland",
+        "img": ["army1.jpg"]
+    },
+    {
+        "date": "Sept. 2018 - March 2020",
+        "workTitle": "Gymnastics instructor",
+        "smallDescription": "Returned to work as an instructor after military service.",
+        "description": "Plan and excecute weekly lessons for children of many ages (4-18) and backgrounds. Goals for lessons are for kids to have a fun and safe environment to socialize and practise what they like most, let it be parkor or more traditional gymnastics.",
+        "icon": "SportsGymnasticsIcon",
+        "location": "Tuusula, Finland",
+        "img": ["vsku1.JPG", "vsku2.JPG"]
+    },
+    {
+        "date": "March 2020 - July 2020",
+        "workTitle": "Peacekeeper",
+        "smallDescription": "Ensure safety of civilians and monitor 'Blue Line'.",
+        "description": "As a peacekeeper in UNIFIL operation (Lebanon) I was tasked with monitoring the Blue Line, supporting the Lebanese Armed Forces (LAF), and assisting the Lebanese population. Among these tasks our troops were tasked keeping up the security of the base. As a squad second in command, I was tasked with more important tasks such as ensuring the safety and wellbeing of our squad and taking charge in the absence of our squad leader.",
+        "icon": "MilitaryTechIcon",
+        "location": "Southern Lebanon",
+        "img": ["lebanon1.jpg", "lebanon4.JPG", "lebanon3.JPG",  "lebanon2.jpg"]
+    },
+    {
+        "date": "Sept. 2020 - May 2022",
+        "workTitle": "Gymnastics instructor",
+        "smallDescription": "Returned to work as an instructor.",
+        "description": "Plan and excecute weekly lessons for children of many ages (4-18) and backgrounds. Goals for lessons are for kids to have a fun and safe environment to socialize and practise what they like most, let it be parkor or more traditional gymnastics.",
+        "icon": "SportsGymnasticsIcon",
+        "location": "Tuusula, Finland",
+        "img": ["vsku1.JPG", "vsku2.JPG"]
+    },
+    {
+        "date": "Aug. 2021 - Present",
+        "workTitle": "Student at Haaga-Helia",
+        "smallDescription": "Started my Business IT studies.",
+        "description": "As I started my studies I was planning on specializing in IT infrastructure, however wile completing mandatory orientation courses I came to the conclusion that software development is more close to heart therefore I decided to specialize in software development. Now as I'm finishing my studies and searching for an internship I am confident I've made the right decision in choosing my specialization and I'm excited to see where the future leads.",
+        "icon": "MenuBookIcon",
+        "location": "Helsinki, Finland",
+        "img": []
+    }
+]

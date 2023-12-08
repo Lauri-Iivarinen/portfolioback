@@ -1,0 +1,84 @@
+[
+    {
+        "project": "Efilibrary",
+        "school": true,
+        "group": true,
+        "description": "EfiLibrary is a project between the students of Business Information Technology Degree Programme in Haaga-Helia University of Applied Sciences, and Eficode Oy, a Finnish company specializing in enhancing software development, whose products are related to automation and devops consulting. Joined for the fall 2023 team to continue development made in the last year of the project.",
+        "technologies": ["TypeScript", "Express", "REST API", "React", "SQL", "Relational databases", "Docker", "Robot Framework", "GitHub actions"],
+        "link": "https://github.com/LibraryProjectGroup",
+        "img": ["https://raw.githubusercontent.com/LibraryProjectGroup/library-project-frontend/s23-documentation/screenshots/login.PNG", "https://raw.githubusercontent.com/LibraryProjectGroup/library-project-frontend/s23-documentation/screenshots/booklist.PNG"]
+    },
+    {
+        "project": "Heat pump IOT app",
+        "school": true,
+        "group": false,
+        "description": "Mobile application for editing configurations in ground-source heat pump using IOT device made by Husdata connected to same network with the mobile phone. Allows users to fine tune heating of their house to save electricity and that way costs of heating during cold winters especially in Finland.",
+        "technologies": ["TypeScript", "React Native", "Component Libraries", "REST API"],
+        "link": "https://github.com/Lauri-Iivarinen/ReactNative-maalampopumppu",
+        "img": ["https://user-images.githubusercontent.com/94760484/236798064-03c7b5c4-8c66-47d4-8ba7-e96dc7637301.PNG","https://user-images.githubusercontent.com/94760484/236458779-59f2216b-02db-4e36-8a9f-2d4d00a0a991.PNG","https://user-images.githubusercontent.com/94760484/236458763-578dad37-fe7d-4001-8b4b-be1bb0f702d6.jpg","https://user-images.githubusercontent.com/94760484/236458786-03c545b8-7dfa-4d6c-8c2b-1ab7d4820981.PNG"]
+    },
+    {
+        "project": "Warspear Offline",
+        "school": true,
+        "group": false,
+        "description": "A fun school project that was created with Pygame library to make an RPG game where player can complete quests, slay mobs level up and learn new skills. Game is ran with vector graphics and goal was to learn more about Python and Python oop.",
+        "technologies": ["Python", "Pygame", "AI art generation"],
+        "link": "https://github.com/Lauri-Iivarinen/Pygame-WarspearOffline",
+        "img": ["https://user-images.githubusercontent.com/94760484/236049310-59be799f-0f7f-4f99-bd9c-5aafdbc517f0.PNG", "https://user-images.githubusercontent.com/94760484/236049230-5e69588f-da1b-4673-bebd-f17ca3a93434.PNG"]
+    },
+    {
+        "project": "Spotmap",
+        "school": false,
+        "group": false,
+        "description": "Spotmap app made with React Native, gives all parkour athletes the needed tools to save, share and find the best training spots near the user. App uses location data from your own phone to act as a navigator for nearby spots. You can comment and like the spots you have enjoyed (or hated:3).",
+        "technologies": ["Java", "Spring Boot", "React Native", "TypeScript", "Component Libraries", "REST API", "SQL", "Relational databases"],
+        "link": "https://github.com/Lauri-Iivarinen/spotmap",
+        "img": ["https://github.com/Lauri-Iivarinen/spotmap/assets/94760484/d099cba8-74b7-4511-832d-3cb13d7a9057", "https://github.com/Lauri-Iivarinen/spotmap/assets/94760484/a2f7c23a-3526-460f-8110-fabe6075de28"]
+    },
+    {
+        "project": "Mobile Chess Game",
+        "school": true,
+        "group": true,
+        "description": "This is a schoolproject made by five students. The application is built with React Native, using TypeScript. As a backend we used socket.io and node (express), to get realtime game and chat updates. The goal was to create a multiplayer online chess game, where players can play against friends and random opponents. We also wanted to include a chat for an enchanced player experience.",
+        "technologies": ["TypeScript", "React Native", "Express", "Socket.io"],
+        "link": "https://github.com/OP2-CheckMate/OnlineChessFront",
+        "img": ["https://user-images.githubusercontent.com/64839531/235627551-8f09f4bd-048a-43e7-90ed-b78a5634a6e9.png", "https://user-images.githubusercontent.com/64839531/235627217-e75fe620-2b93-4723-a73f-0299a877f7d1.png"]
+    },
+    {
+        "project": "Movie Recommendations",
+        "school": true,
+        "group": false,
+        "description": "Simple application to use as a movie history list and to search and get recommendations based on movie history. App uses The Movie Database API for all data.",
+        "technologies": ["JavaScript", "React", "Express", "Relational databases", "SQL", "Component Libraries", "REST API"],
+        "link": "https://github.com/Lauri-Iivarinen/REACT-MovieRecommendations",
+        "img": ["https://user-images.githubusercontent.com/94760484/236471875-e6c1413d-a691-4d31-9a5f-400e6af2f0b8.PNG", "https://user-images.githubusercontent.com/94760484/236470845-65c29ac8-3c46-4970-a6cb-7369f2f24c7e.PNG"]
+    },
+    {
+        "project": "Discord Bot",
+        "school": false,
+        "group": false,
+        "description": "Was talking with friends about a discord server and potential bots used on the server made me want to try and create one. Using DiscordJS library I made a simple bot that has few functions inspired by the same friends that sprung the conversation to begin with.",
+        "technologies": ["JavaScript", "DiscordJs"],
+        "link": "https://github.com/Lauri-Iivarinen/DiscordBot1",
+        "img": ["https://github.com/Lauri-Iivarinen/DiscordBot1/assets/94760484/6eac7ac6-87ab-422c-9bb4-c629cf9e7a44"]
+    },
+    {
+        "project": "Groupcalendar",
+        "school": true,
+        "group": false,
+        "description": "Calendar for group events where user can create, join (and leave) groups, groups then can organize their own events visible for members only and members can then sign up for the created events.",
+        "technologies": ["Java", "Spring Boot", "SQL", "Relational databases"],
+        "link": "https://github.com/Lauri-Iivarinen/groupcalendar",
+        "img": ["https://user-images.githubusercontent.com/94760484/201383303-daef8e2b-e8d2-4269-8f94-00f201ff61b8.png", "https://user-images.githubusercontent.com/94760484/201383746-a783a9dd-0f80-4cad-b3e9-cc192a3c4358.png"]
+    },
+    {
+        "project": "Advent of Code",
+        "school": false,
+        "group": false,
+        "description": "Favorite among developers. An advent calendar which offers a new problem every day that can be solved trough a simple or not so simple script. Every day has a new theme with its problem such as sorting algorithms or recursion issues. Unfortunately stopped early 2022, excited to start again in 2023",
+        "technologies": ["Python", "JavaScript"],
+        "link": "https://github.com/Lauri-Iivarinen/adventOfCode",
+        "img": ["https://github.com/Lauri-Iivarinen/adventOfCode/assets/94760484/66f458ae-9ed6-474f-9fe4-b013351b878d"]
+    }
+
+]
