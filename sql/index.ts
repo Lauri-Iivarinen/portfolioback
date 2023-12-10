@@ -17,8 +17,12 @@ import {
     insertWorkImages
 } from "./static";
 
+export const initDb: () => sqlite3.Database = () => {
+    const db = new sqlite3.Database('database.db')
+    return db
+}
 
-const checkDb = () => {
+const checkDb: () => void = () => {
     const db = new sqlite3.Database('database.db')
 
     db.all('SELECT technology FROM stack', (err: any, result: any) => {
@@ -47,7 +51,7 @@ const checkDb = () => {
     })
 }
 
-const initDb = () => {
+const createDb: () => void = () => {
     const db = new sqlite3.Database('database.db')
 
     db.serialize(() => {
@@ -88,4 +92,4 @@ const initDb = () => {
 
 //initDb()
 
-checkDb()
+//checkDb()
