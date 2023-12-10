@@ -9,10 +9,10 @@ Very barebones backend for <a href="https://github.com/Lauri-Iivarinen/portfolio
     </Summary>
 
 
-<Details>
-    <Summary>
-        Favorite technologies 🧑‍💻
-    </Summary>
+
+<Summary>
+    Favorite technologies 🧑‍💻
+</Summary>
 
 
   ```
@@ -22,11 +22,11 @@ Very barebones backend for <a href="https://github.com/Lauri-Iivarinen/portfolio
     ```
     string[]
     ```
-</Details>
-<Details>
-    <Summary>
-        Project 🧑‍💻
-    </Summary>
+
+
+<Summary>
+Project 🧑‍💻
+</Summary>
 
   ```
   /api/projects
@@ -47,12 +47,12 @@ Project{
     img: string[]
 }
 ```
-</Details>
 
-<Details>
-    <Summary>
-        Career 🧑‍💻
-    </Summary>
+
+
+<Summary>
+Career 🧑‍💻
+</Summary>
 
   ```
   /api/career
@@ -73,8 +73,9 @@ Returns
       img: string[]
   }
   ```
+
 </Details>
-</Details>
-# TODO
+
+## TODO
 
   - Make database CRUD
