@@ -1,4 +1,4 @@
-export interface Work{
+export interface Work {
     date: string
     workTitle: string
     smallDescription: string
