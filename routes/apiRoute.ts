@@ -3,10 +3,14 @@ import { initDb } from '../sql';
 import { WorkDb, Work } from '../util/types/Work';
 import { TechnologyDb } from '../util/types/Technology';
 import { Project, ProjectDb } from '../util/types/Project';
-import { selectProjects, selectStack, selectWork } from '../sql/static';
+import { insertProjectImage, insertProjects, insertProjectTechnologies, selectProjects, selectStack, selectWork } from '../sql/static';
 
 const router = Router()
 const db = initDb()
+
+interface idFetch {
+    ID: number
+}
 
 router.get('/career', async (req, res) => {
     db.all(selectWork, (err: any, result: any) => {
@@ -55,6 +59,27 @@ router.get('/projects', async (req, res) => {
             return object
         }))
     })
+})
+
+router.post('/projects', async (req, res) => {
+    try {
+        const post: Project = req.body
+        let statement = db.prepare(insertProjects)
+        let imgstatement = db.prepare(insertProjectImage)
+        let techstatement = db.prepare(insertProjectTechnologies)
+        db.get('SELECT count(projectid) AS ID from projects;', (err, result: idFetch) => {
+            statement.run(result.ID, post.project, post.school, post.group, post.description, post.link)
+            post.img.forEach(b => imgstatement.run(b, result.ID))
+            post.technologies.forEach(b => techstatement.run(b, result.ID))
+            statement.finalize()
+            imgstatement.finalize()
+            techstatement.finalize()
+            res.json({ok: true})
+        })        
+    } catch (error) {
+        console.error(error)
+        res.json({ok: false})
+    }
 })
 
 export default router
