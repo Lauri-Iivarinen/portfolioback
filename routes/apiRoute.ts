@@ -3,16 +3,13 @@ import { initDb } from '../sql';
 import { WorkDb, Work } from '../util/types/Work';
 import { TechnologyDb } from '../util/types/Technology';
 import { Project, ProjectDb } from '../util/types/Project';
+import { selectProjects, selectStack, selectWork } from '../sql/static';
 
 const router = Router()
 const db = initDb()
 
 router.get('/career', async (req, res) => {
-    db.all(`SELECT work.workid, work.date, work.workTitle, work.smallDescription, work.description, work.location, work.icon, 
-    GROUP_CONCAT(DISTINCT workimages.image) as work_images
-    FROM work
-    LEFT JOIN workimages ON work.workid = workimages.workid
-    GROUP BY work.workid;`, (err: any, result: any) => {
+    db.all(selectWork, (err: any, result: any) => {
         if (err) {
             res.json(err)
         }
@@ -32,7 +29,7 @@ router.get('/career', async (req, res) => {
 })
 
 router.get('/stack', async (req, res) => {
-    db.all('SELECT technology FROM stack', (err: any, result: any) => {
+    db.all(selectStack, (err: any, result: any) => {
         if (err) {
             res.json(err)
         }
@@ -41,13 +38,7 @@ router.get('/stack', async (req, res) => {
 })
 
 router.get('/projects', async (req, res) => {
-    db.all(`SELECT projects.projectid, projects.project, projects.school, projects.grp, projects.description, projects.link,
-    GROUP_CONCAT(DISTINCT technologies.technology) AS technologies,
-    GROUP_CONCAT(DISTINCT projectimages.image) AS project_images
-    FROM projects
-    LEFT JOIN technologies ON projects.projectid = technologies.projectid
-    LEFT JOIN projectimages ON projects.projectid = projectimages.projectid
-    GROUP BY projects.projectid;`, (err: any, result: any) => {
+    db.all(selectProjects, (err: any, result: any) => {
         if (err) {
             res.json(err)
         }

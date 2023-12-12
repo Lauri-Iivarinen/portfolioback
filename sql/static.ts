@@ -60,3 +60,19 @@ export const insertWorkImages = `INSERT INTO workimages(image, workid) VALUES(?,
 export const insertWork = `INSERT INTO work(workid, date, workTitle, smallDescription, description, location, icon) VALUES(?,?,?,?,?,?,?);`
 
 export const insertStack = `INSERT INTO stack(technology) VALUES(?);`
+
+export const selectProjects = `SELECT projects.projectid, projects.project, projects.school, projects.grp, projects.description, projects.link,
+GROUP_CONCAT(DISTINCT technologies.technology) AS technologies,
+GROUP_CONCAT(DISTINCT projectimages.image) AS project_images
+FROM projects
+LEFT JOIN technologies ON projects.projectid = technologies.projectid
+LEFT JOIN projectimages ON projects.projectid = projectimages.projectid
+GROUP BY projects.projectid;`
+
+export const selectWork = `SELECT work.workid, work.date, work.workTitle, work.smallDescription, work.description, work.location, work.icon, 
+GROUP_CONCAT(DISTINCT workimages.image) as work_images
+FROM work
+LEFT JOIN workimages ON work.workid = workimages.workid
+GROUP BY work.workid;`
+
+export const selectStack = 'SELECT technology FROM stack;'
