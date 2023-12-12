@@ -1,6 +1,6 @@
 [
     {
-        "project": "Efilibrary",
+        "project": "EfiLibrary",
         "school": true,
         "group": true,
         "description": "EfiLibrary is a project between the students of Business Information Technology Degree Programme in Haaga-Helia University of Applied Sciences, and Eficode Oy, a Finnish company specializing in enhancing software development, whose products are related to automation and devops consulting. Joined for the fall 2023 team to continue development made in the last year of the project.",
@@ -9,7 +9,7 @@
         "img": ["https://raw.githubusercontent.com/LibraryProjectGroup/library-project-frontend/main/screenshots/login.PNG", "https://raw.githubusercontent.com/LibraryProjectGroup/library-project-frontend/main/screenshots/booklist.PNG"]
     },
     {
-        "project": "Heat pump IOT app",
+        "project": "Heat Pump IOT App",
         "school": true,
         "group": false,
         "description": "Mobile application for editing configurations in ground-source heat pump using IOT device made by Husdata connected to same network with the mobile phone. Allows users to fine tune heating of their house to save electricity and that way costs of heating during cold winters especially in Finland.",
@@ -72,7 +72,7 @@
         "img": ["https://user-images.githubusercontent.com/94760484/201383303-daef8e2b-e8d2-4269-8f94-00f201ff61b8.png", "https://user-images.githubusercontent.com/94760484/201383746-a783a9dd-0f80-4cad-b3e9-cc192a3c4358.png"]
     },
     {
-        "project": "Advent of Code",
+        "project": "Advent Of Code",
         "school": false,
         "group": false,
         "description": "Favorite among developers. An advent calendar which offers a new problem every day that can be solved trough a simple or not so simple script. Every day has a new theme with its problem such as sorting algorithms or recursion issues. Unfortunately stopped early 2022, excited to start again in 2023",

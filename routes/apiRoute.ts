@@ -53,8 +53,8 @@ router.get('/projects', async (req, res) => {
                 group: row.grp === 1? true: false,
                 description: row.description,
                 link: row.link,
-                technologies: row.technologies !== null ? row.technologies.split(','):[],
-                img: row.project_images !== null ? row.project_images.split(',') : []
+                technologies: row.technologies !== null ? row.technologies.split(',') :[],
+                img: row.project_images !== null ? row.project_images.split(',').reverse() : []
             }
             return object
         }))
