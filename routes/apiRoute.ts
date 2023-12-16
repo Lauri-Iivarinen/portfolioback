@@ -1,19 +1,15 @@
 import { Router } from 'express';
 import { initDb } from '../sql';
 import { WorkDb, Work } from '../util/types/Work';
-import { TechnologyDb } from '../util/types/Technology';
+import { TechnologyDb, Technology } from '../util/types/Technology';
 import { Project, ProjectDb } from '../util/types/Project';
-import { insertProjectImage, insertProjects, insertProjectTechnologies, selectProjects, selectStack, selectWork } from '../sql/static';
+import { insertProjectImage, insertProjects, insertProjectTechnologies, selectProjects, selectStack, insertStack, selectWork, insertWork, insertWorkImages } from '../sql/static';
 
 const router = Router()
 const db = initDb()
 
 interface idFetch {
     ID: number
-}
-
-interface Technology{
-    technology: string
 }
 
 router.get('/career', async (req, res) => {
@@ -36,6 +32,25 @@ router.get('/career', async (req, res) => {
     })
 })
 
+router.post('/career', async (req, res) => {
+    const work: Work = req.body
+    try {
+        const workStmt = db.prepare(insertWork)
+        const workImgStmt = db.prepare(insertWorkImages)
+        //workid, date, workTitle, smallDescription, description, location, icon
+        db.get('SELECT count(workid) AS ID from work;', (err, result: idFetch) => {
+            workStmt.run(result.ID, work.date, work.workTitle, work.smallDescription, work.description, work.location, work.icon)
+            work.img.forEach(image => {workImgStmt.run(image, result.ID)})
+            workStmt.finalize()
+            workImgStmt.finalize()
+            res.json({count: 1})
+        })
+    } catch (error) {
+        console.error(error)
+        res.json({count: 0})
+    }
+})
+
 router.get('/stack', async (req, res) => {
     db.all(selectStack, (err: any, result: any) => {
         if (err) {
@@ -52,6 +67,20 @@ router.get('/skills', async (req, res) => {
     })
     
 })
+
+router.post('/stack', async (req, res) => {
+    try {
+        const tech: Technology = req.body
+        const stackStmt = db.prepare(insertStack)
+        stackStmt.run(tech.technology)
+        stackStmt.finalize()
+        res.json({count: 1})
+    } catch (error) {
+        console.error(error)
+        res.json({count: 0})
+    }
+})
+
 
 router.get('/projects', async (req, res) => {
     db.all(selectProjects, (err: any, result: any) => {
@@ -86,11 +115,11 @@ router.post('/projects', async (req, res) => {
             statement.finalize()
             imgstatement.finalize()
             techstatement.finalize()
-            res.json({ok: true})
+            res.json({count: 1})
         })        
     } catch (error) {
         console.error(error)
-        res.json({ok: false})
+        res.json({count: 0})
     }
 })
 
