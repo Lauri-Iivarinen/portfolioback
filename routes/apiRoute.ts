@@ -12,6 +12,10 @@ interface idFetch {
     ID: number
 }
 
+interface Technology{
+    technology: string
+}
+
 router.get('/career', async (req, res) => {
     db.all(selectWork, (err: any, result: any) => {
         if (err) {
@@ -39,6 +43,14 @@ router.get('/stack', async (req, res) => {
         }
         res.json(result.map((row: TechnologyDb) => row.technology))
     })
+})
+
+router.get('/skills', async (req, res) => {
+    db.all('SELECT DISTINCT technology from technologies;', (err, result: Technology[]) => {
+        console.log(result)
+        res.json(result.map(a => a.technology))
+    })
+    
 })
 
 router.get('/projects', async (req, res) => {
