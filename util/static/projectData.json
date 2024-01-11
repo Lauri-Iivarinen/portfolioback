@@ -36,6 +36,15 @@
         "img": ["https://github.com/Lauri-Iivarinen/spotmap/assets/94760484/d099cba8-74b7-4511-832d-3cb13d7a9057", "https://github.com/Lauri-Iivarinen/spotmap/assets/94760484/a2f7c23a-3526-460f-8110-fabe6075de28"]
     },
     {
+        "project": "Spaceapocalypse",
+        "school": false,
+        "group": false,
+        "description": "Work in progress. Personal project with the goal of learning more about game development and at the same time learn more abot C# and Unity. The game itself is a roguelike with a ship in space that is chased by different types of enemies that you fight and gain power by leveling up.",
+        "technologies": ["Unity", "C#"],
+        "link": "https://github.com/Lauri-Iivarinen/spaceapocalypse",
+        "img": ["https://github.com/Lauri-Iivarinen/zombapocalypse/assets/94760484/9e14ccb6-1924-4fcc-910e-d222d77d8152", "https://github.com/Lauri-Iivarinen/spaceapocalypse/assets/94760484/d2af0b74-8310-42ae-abb8-0a3f54d3bd71"]
+    },
+    {
         "project": "Mobile Chess Game",
         "school": true,
         "group": true,
