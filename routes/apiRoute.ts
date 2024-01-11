@@ -60,6 +60,14 @@ router.get('/stack', async (req, res) => {
     })
 })
 
+router.get('/skills', async (req, res) => {
+    db.all('SELECT DISTINCT technology from technologies;', (err, result: Technology[]) => {
+        console.log(result)
+        res.json(result.map(a => a.technology))
+    })
+    
+})
+
 router.post('/stack', async (req, res) => {
     try {
         const tech: Technology = req.body
