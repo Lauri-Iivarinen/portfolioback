@@ -39,10 +39,10 @@
         "project": "Spaceapocalypse",
         "school": false,
         "group": false,
-        "description": "Work in progress. Personal project with the goal of learning more about game development and at the same time learn more abot C# and Unity. The game itself is a roguelike with a ship in space that is chased by different types of enemies that you fight and gain power by leveling up.",
+        "description": "The current project im working on. Personal project with the goal of learning more about game development and at the same time learn more abot C# and Unity. The game itself is a roguelite with a ship in space that is chased by different types of enemies that you fight and gain power by leveling up.",
         "technologies": ["Unity", "C#"],
         "link": "https://github.com/Lauri-Iivarinen/spaceapocalypse",
-        "img": ["https://github.com/Lauri-Iivarinen/zombapocalypse/assets/94760484/9e14ccb6-1924-4fcc-910e-d222d77d8152", "https://github.com/Lauri-Iivarinen/spaceapocalypse/assets/94760484/d2af0b74-8310-42ae-abb8-0a3f54d3bd71"]
+        "img": ["https://github.com/Lauri-Iivarinen/spaceapocalypse/assets/94760484/23fe0a4a-ade0-4253-91b5-522df8118a27", "https://github.com/Lauri-Iivarinen/spaceapocalypse/assets/94760484/abda85b2-b8d6-49a7-b4b0-f659357c8497","https://github.com/Lauri-Iivarinen/spaceapocalypse/assets/94760484/d2af0b74-8310-42ae-abb8-0a3f54d3bd71"]
     },
     {
         "project": "Mobile Chess Game",
@@ -75,7 +75,7 @@
         "project": "Groupcalendar",
         "school": true,
         "group": false,
-        "description": "Calendar for group events where user can create, join (and leave) groups, groups then can organize their own events visible for members only and members can then sign up for the created events.",
+        "description": "Advanced and complicated database. Calendar for group events where user can create, join (and leave) groups, groups then can organize their own events visible for members only and members can then sign up for the created events.",
         "technologies": ["Java", "Spring Boot", "SQL", "Relational databases"],
         "link": "https://github.com/Lauri-Iivarinen/groupcalendar",
         "img": ["https://user-images.githubusercontent.com/94760484/201383303-daef8e2b-e8d2-4269-8f94-00f201ff61b8.png", "https://user-images.githubusercontent.com/94760484/201383746-a783a9dd-0f80-4cad-b3e9-cc192a3c4358.png"]
@@ -84,7 +84,7 @@
         "project": "Advent Of Code",
         "school": false,
         "group": false,
-        "description": "Favorite among developers. An advent calendar which offers a new problem every day that can be solved trough a simple or not so simple script. Every day has a new theme with its problem such as sorting algorithms or recursion issues. Unfortunately stopped early 2022, excited to start again in 2023",
+        "description": "Favorite among developers. An advent calendar which offers a new problem every day that can be solved trough a simple or not so simple script. Every day has a new theme with its problem such as sorting algorithms or recursion issues. Unfortunately stopped early 2022. In 2023 I took a more relaxed approach and completed at least 1 challenge almost every day.",
         "technologies": ["Python", "JavaScript"],
         "link": "https://github.com/Lauri-Iivarinen/adventOfCode",
         "img": ["https://github.com/Lauri-Iivarinen/adventOfCode/assets/94760484/66f458ae-9ed6-474f-9fe4-b013351b878d"]
