@@ -56,9 +56,18 @@
     {
         "date": "Aug. 2021 - Present",
         "workTitle": "Student at Haaga-Helia",
-        "smallDescription": "Started my Business IT studies.",
-        "description": "As I started my studies I was planning on specializing in IT infrastructure, however wile completing mandatory orientation courses I came to the conclusion that software development is more close to heart therefore I decided to specialize in software development. Now as I'm finishing my studies and searching for an internship I am confident I've made the right decision in choosing my specialization and I'm excited to see where the future leads.",
+        "smallDescription": "Started my Business IT studies. Will graduate at the next cycle (Fall 2024).",
+        "description": "As I started my studies I was planning on specializing in IT infrastructure, however wile completing mandatory orientation courses I came to the conclusion that software development is more close to heart therefore I decided to specialize in software development. Now as I'm finishing my studies and searching for an internship I am confident I've made the right decision in choosing my specialization and I'm excited to see where the future leads. With my thesis being under evaluation at the moment and all required courses completed I am looking to graduate as soon as I complete my current internship.",
         "icon": "MenuBookIcon",
+        "location": "Helsinki, Finland",
+        "img": []
+    },
+    {
+        "date": "May 2024 - Present",
+        "workTitle": "Internship at Natural Resources Institute Finland",
+        "smallDescription": "Statistics publishing trainee, helping with software and issues related to publishing statisctics",
+        "description": "Working as an intern in statistics publishing team. I have been taken on into the project as a technical expert. With my background in programming, I have been a great fit in the team. With the team's minimal knowledge of programming and software development practices I have been able to boost the team's effectiveness in working with websites technologies and Git.",
+        "icon": "LaptopIcon",
         "location": "Helsinki, Finland",
         "img": []
     }
